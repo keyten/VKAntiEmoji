@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 (function (window, undefined) {
-	if (typeof unsafeWindow != undefined) {
+	if (typeof unsafeWindow !== 'undefined') {
 		window = unsafeWindow;
 	} else {
 		window = window;
