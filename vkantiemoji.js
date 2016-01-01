@@ -1,10 +1,13 @@
 // ==UserScript==
-// @name VKAntiEmoji
-// @description Disables emoji in vk messages / wall / etc.
-// @author Dmitriy Miroshnichenko aka Keyten
-// @license MIT
-// @version 1.0
-// @include *vk.com*
+// @name          VKAntiEmoji
+// @namespace     http://github.com/keyten/VKAntiEmoji
+// @description   Disables emoji in vk messages / wall / etc.
+// @author        Dmitriy Miroshnichenko aka Keyten
+// @license       MIT
+// @version       1.0
+// @include       *vk.com*
+// @exclude       %exclude%
+// @grant         none
 // ==/UserScript==
 
 (function (window, undefined) {
