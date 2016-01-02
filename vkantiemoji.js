@@ -52,7 +52,8 @@
 	};
 
 	// emoji
-	window.Emoji.getEmojiHTML = function(a){ return window.Emoji.cssEmoji[a][1]; };
+	var getEmojiHTML = window.Emoji.getEmojiHTML;
+	window.Emoji.getEmojiHTML = function(a){ return (window.Emoji.cssEmoji[a] || [0,getEmojiHTML.apply(this, arguments)])[1]; };
 	window.Emoji.addEmoji = function(){};
 	window.Emoji.tabSwitch(document.getElementsByClassName('emoji_tab_-1')[0], -1, 0);
 
